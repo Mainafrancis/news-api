@@ -11,6 +11,13 @@
       {% for business_news in busines %}
     <div class="card border-primary" style="width: 18rem">
 
+       <div class="card-title"> <b>Title:</b><i>{{business_nes.title}}</i></div>
+       <img src="{{business_news.urlToImage}}" class="card-img-top img-fluid" alt="business" height="200" width="200">
+       <div class="card-body">
+       <p class="card-text">{{ business_news.description }}</p>
+       <a href="{{business_news.url}}" class="btn btn-primary">Read full article</a>
+       </div>
+       <h5 class="card-footer"><b>created at:</b>{{ business_news.publishedAt}}</h5> 
     </div>
   </div>
 </div>
