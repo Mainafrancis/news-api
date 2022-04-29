@@ -8,3 +8,7 @@ from ..models import News_Article
 @main.route('/')
 def index():
     business_news = get_news('business')
+    science_news = get_news('science')
+    entertainment_news = get_news('entertainment')
+    title = 'Welcome to the news platform'
+    return render_template('index.html', business=business_news, science=science_news, entertainment=entertainment_news)
