@@ -17,3 +17,27 @@ def get_news(category):
         get_news_response = json.loads(get_news_data)
 
         news_results = None
+
+        if get_news_response['articles']:
+            news_results_list = get_news_response['articles']
+            news_results = process_results(news_results_list)
+
+
+    return news_results
+
+
+def process_rsults(news_list):
+    news_results = [] 
+    for news_item in news_list:
+        title = news_item.get('title')
+        publishedAt = news_item.get('publishedAt')
+        description = news_item.get('description')
+        urlToImage = news_item.get('urlToImage')
+        url = news_item.get('url')   
+        if urlToImage:
+
+            news_object = News_Article(title, description, url, urlToImage, publishedAt)
+            news_results.append(news_object)
+
+    return news_results            
+
