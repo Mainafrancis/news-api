@@ -10,4 +10,7 @@ class ArticleTest(unittest.TestCase):
         Set up method that will run before every Test
         '''
         self.new_article = News_Article('title', 'description', 'url', 'urlToImage', 'publishedAt')
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_article,News_Article))    
         
