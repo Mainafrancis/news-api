@@ -46,15 +46,15 @@ $ python3.8 -m venv --without-pip virtual
 
   * Insert the API Key you received from News Api where <Your-Api-Key> is
 
-  # Testing the Application
+ ### Testing the Application
    To run the test for the class files:
     $ python3.8 manage.py tests
 
-    # Technologies Used
+ ### Technologies Used
      python(flask)
      
 
-    # License
+ ### License
     Copyright (c) 2022 Francis Maina [chui]
 
 
