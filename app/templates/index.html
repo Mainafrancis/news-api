@@ -31,9 +31,16 @@
         <img src="{{science_news.urlToImage}}" class="card-img-top img-fluid" alt="science" height="200" width="200">
         <div class="card-body">
 
-            
+            <p class="card-text">{{ science_news.description }}</p>
+             <a href="{{science_news.url}}" class="btn btn-primary">Read full articl</a>
 
-        </div>   
+        </div>  
+        <h5 class="card-footer"><b>created at:</b>{{ science_news.publishedAt}}</h5> 
+        <hr>
+        <br>
+        {% endfor %}
     </div>
-</div>
+    </div>
+
+    
 </div>
