@@ -19,6 +19,21 @@
        </div>
        <h5 class="card-footer"><b>created at:</b>{{ business_news.publishedAt}}</h5> 
     </div>
-  </div>
+    <hr>
+    <br>
+    {% endfor %}
+    </div>
+    <div class="col-md-4"></div>
+       <h2>Science news</h2>
+    <div class="card science" style="width: 18rem">
+       {% for science_news in science %}
+        <div class="card-title"><b>Title: </b><i>{{science_news.title}}</i></div>
+        <img src="{{science_news.urlToImage}}" class="card-img-top img-fluid" alt="science" height="200" width="200">
+        <div class="card-body">
+
+            
+
+        </div>   
+    </div>
 </div>
 </div>
