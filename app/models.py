@@ -9,4 +9,13 @@ class News_Article:
         self.url = url
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
+
+class News_source:
+    '''
+    defines news source objects
+    '''
+    def __init__(self,news_id,name):
+        self.news_id = news_id
+        self.name = name
+              
         
