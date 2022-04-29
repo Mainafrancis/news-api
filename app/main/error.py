@@ -6,3 +6,4 @@ def four_Ow_four(error):
     '''
     function for 404 template
     '''
+    return render_template('fourOwfour.html'),404
