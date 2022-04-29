@@ -46,6 +46,12 @@
        <h2>entertainment news</h2>
        <div class="card tesla" style="width: 18rem">
           {% for entertainment_news in entertainment %}
+        <div class="card-title"><b>Title:</b><i>{{entertainment_news.title}}</i></div>
+        <img src="{{entertainment_news.urlToImage}}" class="card-img-top img-fluid" alt="entertainment" height="200" width="200"> 
+        <div class="card-body">
+            <p class="card-text">{{entertainment_news.description}}</p>
+        </div>
+         
        </div>
     </div>
 </div>
